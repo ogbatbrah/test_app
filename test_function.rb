@@ -13,26 +13,24 @@
 # doopy(2,100)
 # end
 
-def doopy(a, b)
-   if compare_class(a, b) == false
-   	return false
-   end
-   if a ==b 
-   	return true
-   end
-   false
-end
+# def doopy(a, b)
+#    if compare_class(a, b) == false
+#    	return false
+#    end
+#    if a == b 
+#    	return true
+#    end
+#    false
+# end
 
 def compare_class(a, b)
 	if a.class == b.class
 	 return true
     else
 	return false
+   end
 end
 
-p doopy(5, "5")
-p doopy("10", "10")
-p doopy([10], 10)
-p doopy({10}, {10})
-
-
+p compare_class(5, "5")
+p compare_class("10", "10")
+p compare_class([10], 10)
